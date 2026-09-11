@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy - BioChem Lab Hub</title>
+
+    <meta name="description"
+          content="Privacy Policy for BioChem Lab Hub - Biochemistry Calculator & Study Tools">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7f6;
+            color: #222;
+            line-height: 1.7;
+        }
+
+        .header {
+            background: #1b5e20;
+            color: white;
+            padding: 18px 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            color: #c8e6c9;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 0 18px;
+        }
+
+        .privacy-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1b5e20;
+            margin-top: 28px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .notice {
+            background: #e8f5e9;
+            border-left: 5px solid #2e7d32;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 11px 18px;
+            background: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 7px;
+        }
+
+        .back-button:hover {
+            background: #1b5e20;
+        }
+
+        footer {
+            margin-top: 35px;
+            padding: 25px 15px;
+            text-align: center;
+            background: #1b5e20;
+            color: white;
+        }
+
+        footer a {
+            color: #c8e6c9;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+
+            .privacy-card {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 21px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>🧪 BioChem Lab Hub</h1>
+
+        <p>Privacy Policy</p>
+
+    </header>
+
+
+    <main class="container">
+
+        <div class="privacy-card">
+
+            <h2>Privacy Policy</h2>
+
+            <p>
+                Welcome to BioChem Lab Hub. This Privacy Policy explains
+                how information may be handled when you use our website,
+                BioChem Lab Hub — Biochemistry Calculator & Study Tools.
+            </p>
+
+            <p>
+                By using this website, you agree to the practices described
+                in this Privacy Policy.
+            </p>
+
+
+            <h2>1. Information We Collect</h2>
+
+            <p>
+                BioChem Lab Hub is designed primarily as an educational
+                platform. Most of the calculators and study tools can be
+                used without creating an account.
+            </p>
+
+            <p>
+                We do not intentionally ask users to provide sensitive
+                personal information through the calculators.
+            </p>
+
+
+            <h2>2. Calculator Information</h2>
+
+            <p>
+                Information entered into the calculators is used to perform
+                the requested calculation and display the result.
+            </p>
+
+            <div class="notice">
+
+                <strong>Important:</strong>
+
+                <br>
+
+                Do not enter passwords, financial information, medical
+                records, or other sensitive personal information into the
+                calculator fields.
+
+            </div>
+
+
+            <h2>3. Contact Information</h2>
+
+            <p>
+                If you contact us through the website, you may provide
+                information such as your name and message so that we can
+                respond to your request.
+            </p>
+
+            <p>
+                Please avoid sending sensitive or confidential information
+                through the contact form.
+            </p>
+
+
+            <h2>4. Cookies</h2>
+
+            <p>
+                BioChem Lab Hub may use cookies or similar technologies in
+                the future to improve website functionality, understand
+                website usage, or support advertising services.
+            </p>
+
+            <p>
+                If third-party advertising or analytics services are added,
+                those services may use cookies or similar technologies
+                according to their own privacy policies.
+            </p>
+
+
+            <h2>5. Third-Party Services</h2>
+
+            <p>
+                BioChem Lab Hub may use third-party services in the future,
+                such as analytics, advertising, hosting, or other website
+                services.
+            </p>
+
+            <p>
+                These third-party services may collect information according
+                to their own privacy policies and terms.
+            </p>
+
+
+            <h2>6. Advertising</h2>
+
+            <p>
+                BioChem Lab Hub may display advertisements in the future.
+                Advertising providers may use cookies or similar technologies
+                to provide and measure advertisements.
+            </p>
+
+            <p>
+                Any advertising service used on this website will be subject
+                to its applicable policies and requirements.
+            </p>
+
+
+            <h2>7. Children's Privacy</h2>
+
+            <p>
+                BioChem Lab Hub is an educational website intended primarily
+                for students and general science learners.
+            </p>
+
+            <p>
+                We do not intentionally collect sensitive personal
+                information from children.
+            </p>
+
+
+            <h2>8. Data Security</h2>
+
+            <p>
+                We take reasonable steps to protect information handled
+                through the website. However, no internet service can
+                guarantee complete security of information transmitted
+                online.
+            </p>
+
+
+            <h2>9. External Links</h2>
+
+            <p>
+                The website may contain links to external websites or
+                services. We are not responsible for the privacy practices,
+                content, or security of external websites.
+            </p>
+
+            <p>
+                Users should review the privacy policies of external
+                websites before providing personal information.
+            </p>
+
+
+            <h2>10. Changes to This Privacy Policy</h2>
+
+            <p>
+                This Privacy Policy may be updated as Bio
