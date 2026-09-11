@@ -1,0 +1,2567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+<!-- =========================
+     SEO
+========================= -->
+
+    <title>BioChem Lab Hub | Biochemistry Calculator & Study Tools</title>
+
+    <meta name="description"
+          content="BioChem Lab Hub provides biochemistry calculators, laboratory tools, formulas, topics, quizzes, and study resources for Biochemistry students and learners.">
+
+    <meta name="keywords"
+          content="Biochemistry calculator, biochemistry tools, laboratory calculator, molarity calculator, dilution calculator, molecular weight calculator, DNA calculator, protein calculator, biochemistry formulas, biochemistry topics">
+
+    <meta name="author"
+          content="Abdullahi Sani Garba">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="googlebot"
+          content="index, follow">
+
+    <meta name="language"
+          content="English">
+
+    <meta property="og:title"
+          content="BioChem Lab Hub | Biochemistry Calculator & Study Tools">
+
+    <meta property="og:description"
+          content="Calculate, learn, and explore Biochemistry with useful calculators, laboratory tools, formulas, topics, and quizzes.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:site_name"
+          content="BioChem Lab Hub">
+
+    <meta name="theme-color"
+          content="#1b5e20">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header">
+
+    <button
+        class="menu-button"
+        onclick="openMenu()"
+        aria-label="Open menu">
+        ☰
+    </button>
+
+    <div class="logo">
+        🧪 BioChem <span>Lab Hub</span>
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     SIDE MENU
+===================================================== -->
+
+<div
+    class="menu-overlay"
+    id="menuOverlay"
+    onclick="closeMenu()">
+</div>
+
+
+<nav
+    class="side-menu"
+    id="sideMenu">
+
+    <button
+        class="close-menu"
+        onclick="closeMenu()">
+        ×
+    </button>
+
+
+    <div class="menu-title">
+        🧪 Calculations
+    </div>
+
+    <button class="menu-item"
+            onclick="showSection('molarity')">
+        🧪 Molarity
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('dilution')">
+        💧 Dilution
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('molecularWeight')">
+        🧬 Molecular Weight
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('molality')">
+        🧪 Molality
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('normality')">
+        ⚗️ Normality
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('ph')">
+        ⚗️ pH Calculator
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('poh')">
+        ⚗️ pOH
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('buffer')">
+        🧪 Buffer / Henderson–Hasselbalch
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('beer')">
+        🔬 Beer–Lambert Law
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('enzyme')">
+        🧬 Enzyme Activity
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('specificActivity')">
+        🧪 Specific Activity
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('kmvmax')">
+        📈 Km & Vmax
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('protein')">
+        🧬 Protein Concentration
+    </button>
+
+
+    <div class="menu-title">
+        🧬 DNA / RNA Tools
+    </div>
+
+    <button class="menu-item"
+            onclick="showSection('gc')">
+        🧬 DNA GC% Calculator
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('dnaWeight')">
+        🧬 DNA Molecular Weight
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('complement')">
+        🧬 DNA Complementary Sequence
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('dnaRna')">
+        🧬 DNA/RNA Concentration
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('melting')">
+        🧬 DNA Melting Temperature
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('purity')">
+        🔬 A260/A280 Purity Ratio
+    </button>
+
+
+    <div class="menu-title">
+        🔬 Laboratory Tools
+    </div>
+
+    <button class="menu-item"
+            onclick="showSection('unit')">
+        🔄 Unit Converter
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('percentage')">
+        🧪 Percentage Concentration
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('serial')">
+        🔬 Serial Dilution
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('rcf')">
+        🌀 RCF Centrifugation
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('proteinWeight')">
+        🧬 Protein Molecular Weight
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('amino')">
+        🧬 Amino Acid Calculator
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('absorbance')">
+        🔬 Absorbance → Concentration
+    </button>
+
+
+    <div class="menu-title">
+        📚 Learning
+    </div>
+
+    <button class="menu-item"
+            onclick="showSection('formulas')">
+        📚 Biochemistry Formulas
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('library')">
+        📖 Formula Library
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('search')">
+        🔎 Biochemistry Search
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('topics')">
+        📚 Biochemistry Topics
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('quiz')">
+        📝 Biochemistry Quiz
+    </button>
+
+
+    <div class="menu-title">
+        🧭 Navigation
+    </div>
+
+    <button class="menu-item"
+            onclick="showSection('home')">
+        🏠 Home
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('about')">
+        👤 About
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('contact')">
+        📩 Contact
+    </button>
+
+    <button class="menu-item"
+            onclick="showSection('privacy')">
+        🔒 Privacy Policy
+    </button>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO / HOME
+===================================================== -->
+
+<section
+    id="home"
+    class="section active">
+
+    <div class="hero">
+
+        <div class="hero-icon">
+            🧪
+        </div>
+
+        <h1>
+            BioChem Lab Hub
+        </h1>
+
+        <p>
+            Biochemistry Calculator & Study Tools
+        </p>
+
+        <p class="tagline">
+            Calculate • Learn • Explore Biochemistry
+        </p>
+
+    </div>
+
+
+    <main>
+
+        <div class="ad-container">
+            <span>
+                Advertisement Space
+            </span>
+        </div>
+
+
+        <div class="info-card">
+
+            <h2>
+                Welcome to BioChem Lab Hub
+            </h2>
+
+            <p>
+                Your digital platform for biochemistry calculations,
+                laboratory tools, formulas, study resources and
+                biochemistry learning.
+            </p>
+
+            <p>
+                Select a tool from the menu ☰ to begin.
+            </p>
+
+        </div>
+
+
+        <div class="calculator-grid">
+
+            <div class="card">
+
+                <h2>🧪 Calculations</h2>
+
+                <p>
+                    Perform common biochemistry and laboratory
+                    calculations quickly.
+                </p>
+
+                <button
+                    class="btn"
+                    onclick="showSection('molarity')">
+                    Open Calculators
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>📚 Learn Biochemistry</h2>
+
+                <p>
+                    Explore biochemistry topics, formulas and
+                    study resources.
+                </p>
+
+                <button
+                    class="btn"
+                    onclick="showSection('topics')">
+                    Explore Topics
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>📝 Test Yourself</h2>
+
+                <p>
+                    Practice your knowledge with the
+                    biochemistry quiz.
+                </p>
+
+                <button
+                    class="btn"
+                    onclick="showSection('quiz')">
+                    Start Quiz
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="ad-container">
+            <span>
+                Advertisement Space
+            </span>
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     MOLARITY
+===================================================== -->
+
+<section id="molarity" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧪 Molarity Calculator
+        </h2>
+
+        <div class="card">
+
+            <p>
+                Calculate molarity from moles and volume.
+            </p>
+
+            <label for="moles">
+                Moles of solute
+            </label>
+
+            <input
+                type="number"
+                id="moles"
+                placeholder="Enter moles">
+
+
+            <label for="volume">
+                Volume (L)
+            </label>
+
+            <input
+                type="number"
+                id="volume"
+                placeholder="Enter volume in liters">
+
+
+            <button
+                class="btn"
+                onclick="calculateMolarity()">
+                Calculate
+            </button>
+
+
+            <div
+                id="molarityResult"
+                class="result">
+            </div>
+
+            <div class="formula">
+                Formula: M = moles ÷ volume (L)
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     DILUTION
+===================================================== -->
+
+<section id="dilution" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            💧 Dilution Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="c1">
+                Initial concentration (C₁)
+            </label>
+
+            <input
+                type="number"
+                id="c1"
+                placeholder="Enter C₁">
+
+
+            <label for="v1">
+                Initial volume (V₁)
+            </label>
+
+            <input
+                type="number"
+                id="v1"
+                placeholder="Enter V₁">
+
+
+            <label for="c2">
+                Final concentration (C₂)
+            </label>
+
+            <input
+                type="number"
+                id="c2"
+                placeholder="Enter C₂">
+
+
+            <label for="v2">
+                Final volume (V₂)
+            </label>
+
+            <input
+                type="number"
+                id="v2"
+                placeholder="Enter V₂">
+
+
+            <button
+                class="btn"
+                onclick="calculateDilution()">
+                Calculate
+            </button>
+
+
+            <div
+                id="dilutionResult"
+                class="result">
+            </div>
+
+
+            <div class="formula">
+                Formula: C₁V₁ = C₂V₂
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     MOLECULAR WEIGHT
+===================================================== -->
+
+<section id="molecularWeight" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 Molecular Weight Calculator
+        </h2>
+
+        <div class="card">
+
+            <p>
+                Enter a chemical formula such as H2O, NaCl or CO2.
+            </p>
+
+            <label for="formulaInput">
+                Chemical Formula
+            </label>
+
+            <input
+                type="text"
+                id="formulaInput"
+                placeholder="Example: H2O">
+
+
+            <button
+                class="btn"
+                onclick="calculateMolecularWeight()">
+                Calculate
+            </button>
+
+
+            <div
+                id="molecularWeightResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     MOLALITY
+===================================================== -->
+
+<section id="molality" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧪 Molality Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="molalityMoles">
+                Moles of solute
+            </label>
+
+            <input
+                type="number"
+                id="molalityMoles">
+
+
+            <label for="solventKg">
+                Mass of solvent (kg)
+            </label>
+
+            <input
+                type="number"
+                id="solventKg">
+
+
+            <button
+                class="btn"
+                onclick="calculateMolality()">
+                Calculate
+            </button>
+
+
+            <div
+                id="molalityResult"
+                class="result">
+            </div>
+
+            <div class="formula">
+                Formula: m = moles of solute ÷ kg of solvent
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     NORMALITY
+===================================================== -->
+
+<section id="normality" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            ⚗️ Normality Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="normalMoles">
+                Equivalent amount
+            </label>
+
+            <input
+                type="number"
+                id="normalMoles">
+
+
+            <label for="normalVolume">
+                Volume (L)
+            </label>
+
+            <input
+                type="number"
+                id="normalVolume">
+
+
+            <button
+                class="btn"
+                onclick="calculateNormality()">
+                Calculate
+            </button>
+
+
+            <div
+                id="normalityResult"
+                class="result">
+            </div>
+
+            <div class="formula">
+                Normality = equivalents ÷ volume (L)
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     PH
+===================================================== -->
+
+<section id="ph" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            ⚗️ pH Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="hydrogen">
+                [H⁺] concentration
+            </label>
+
+            <input
+                type="number"
+                id="hydrogen"
+                placeholder="Example: 0.0001">
+
+
+            <button
+                class="btn"
+                onclick="calculatePH()">
+                Calculate pH
+            </button>
+
+
+            <div
+                id="phResult"
+                class="result">
+            </div>
+
+            <div class="formula">
+                pH = −log₁₀[H⁺]
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     POH
+===================================================== -->
+
+<section id="poh" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            ⚗️ pOH Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="hydroxide">
+                [OH⁻] concentration
+            </label>
+
+            <input
+                type="number"
+                id="hydroxide"
+                placeholder="Example: 0.001">
+
+
+            <button
+                class="btn"
+                onclick="calculatePOH()">
+                Calculate pOH
+            </button>
+
+
+            <div
+                id="pohResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     BUFFER
+===================================================== -->
+
+<section id="buffer" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧪 Buffer / Henderson–Hasselbalch
+        </h2>
+
+        <div class="card">
+
+            <label for="pka">
+                pKa
+            </label>
+
+            <input
+                type="number"
+                id="pka">
+
+
+            <label for="baseConcentration">
+                [A⁻] Base concentration
+            </label>
+
+            <input
+                type="number"
+                id="baseConcentration">
+
+
+            <label for="acidConcentration">
+                [HA] Acid concentration
+            </label>
+
+            <input
+                type="number"
+                id="acidConcentration">
+
+
+            <button
+                class="btn"
+                onclick="calculateBuffer()">
+                Calculate pH
+            </button>
+
+
+            <div
+                id="bufferResult"
+                class="result">
+            </div>
+
+
+            <div class="formula">
+                pH = pKa + log([A⁻]/[HA])
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     BEER LAMBERT
+===================================================== -->
+
+<section id="beer" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🔬 Beer–Lambert Law
+        </h2>
+
+        <div class="card">
+
+            <p>
+                Calculate absorbance using molar absorptivity,
+                concentration and path length.
+            </p>
+
+            <label for="epsilon">
+                Molar absorptivity (ε)
+            </label>
+
+            <input
+                type="number"
+                id="epsilon">
+
+
+            <label for="beerConcentration">
+                Concentration (c)
+            </label>
+
+            <input
+                type="number"
+                id="beerConcentration">
+
+
+            <label for="pathLength">
+                Path length (l)
+            </label>
+
+            <input
+                type="number"
+                id="pathLength"
+                value="1">
+
+
+            <button
+                class="btn"
+                onclick="calculateBeer()">
+                Calculate Absorbance
+            </button>
+
+
+            <div
+                id="beerResult"
+                class="result">
+            </div>
+
+
+            <div class="formula">
+                A = εcl
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     ENZYME ACTIVITY
+===================================================== -->
+
+<section id="enzyme" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 Enzyme Activity
+        </h2>
+
+        <div class="card">
+
+            <label for="productAmount">
+                Product formed
+            </label>
+
+            <input
+                type="number"
+                id="productAmount">
+
+
+            <label for="reactionTime">
+                Time
+            </label>
+
+            <input
+                type="number"
+                id="reactionTime">
+
+
+            <button
+                class="btn"
+                onclick="calculateEnzymeActivity()">
+                Calculate
+            </button>
+
+
+            <div
+                id="enzymeResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     SPECIFIC ACTIVITY
+===================================================== -->
+
+<section id="specificActivity" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧪 Specific Activity
+        </h2>
+
+        <div class="card">
+
+            <label for="enzymeActivity">
+                Enzyme activity
+            </label>
+
+            <input
+                type="number"
+                id="enzymeActivity">
+
+
+            <label for="proteinMass">
+                Protein amount
+            </label>
+
+            <input
+                type="number"
+                id="proteinMass">
+
+
+            <button
+                class="btn"
+                onclick="calculateSpecificActivity()">
+                Calculate
+            </button>
+
+
+            <div
+                id="specificActivityResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     KM & VMAX
+===================================================== -->
+
+<section id="kmvmax" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            📈 Km & Vmax
+        </h2>
+
+        <div class="card">
+
+            <p>
+                Calculate reaction velocity using the
+                Michaelis–Menten equation.
+            </p>
+
+            <label for="vmax">
+                Vmax
+            </label>
+
+            <input
+                type="number"
+                id="vmax">
+
+
+            <label for="substrate">
+                Substrate concentration [S]
+            </label>
+
+            <input
+                type="number"
+                id="substrate">
+
+
+            <label for="km">
+                Km
+            </label>
+
+            <input
+                type="number"
+                id="km">
+
+
+            <button
+                class="btn"
+                onclick="calculateKmVmax()">
+                Calculate Velocity
+            </button>
+
+
+            <div
+                id="kmvmaxResult"
+                class="result">
+            </div>
+
+
+            <div class="formula">
+                v = Vmax[S] / (Km + [S])
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     PROTEIN CONCENTRATION
+===================================================== -->
+
+<section id="protein" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 Protein Concentration
+        </h2>
+
+        <div class="card">
+
+            <label for="proteinAbsorbance">
+                Absorbance
+            </label>
+
+            <input
+                type="number"
+                id="proteinAbsorbance">
+
+
+            <label for="proteinCoefficient">
+                Extinction coefficient
+            </label>
+
+            <input
+                type="number"
+                id="proteinCoefficient">
+
+
+            <button
+                class="btn"
+                onclick="calculateProteinConcentration()">
+                Calculate
+            </button>
+
+
+            <div
+                id="proteinResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     DNA GC%
+===================================================== -->
+
+<section id="gc" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 DNA GC% Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="dnaSequence">
+                DNA Sequence
+            </label>
+
+            <textarea
+                id="dnaSequence"
+                rows="5"
+                placeholder="Example: ATGCGCTA">
+            </textarea>
+
+
+            <button
+                class="btn"
+                onclick="calculateGC()">
+                Calculate GC%
+            </button>
+
+
+            <div
+                id="gcResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     DNA MOLECULAR WEIGHT
+===================================================== -->
+
+<section id="dnaWeight" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 DNA Molecular Weight
+        </h2>
+
+        <div class="card">
+
+            <label for="dnaWeightSequence">
+                DNA Sequence
+            </label>
+
+            <textarea
+                id="dnaWeightSequence"
+                rows="5"
+                placeholder="Enter DNA sequence">
+            </textarea>
+
+
+            <button
+                class="btn"
+                onclick="calculateDNAWeight()">
+                Calculate
+            </button>
+
+
+            <div
+                id="dnaWeightResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     DNA COMPLEMENT
+===================================================== -->
+
+<section id="complement" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 DNA Complementary Sequence
+        </h2>
+
+        <div class="card">
+
+            <label for="complementSequence">
+                DNA Sequence
+            </label>
+
+            <textarea
+                id="complementSequence"
+                rows="5"
+                placeholder="Example: ATGC">
+            </textarea>
+
+
+            <button
+                class="btn"
+                onclick="calculateComplement()">
+                Get Complement
+            </button>
+
+
+            <div
+                id="complementResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     DNA/RNA CONCENTRATION
+===================================================== -->
+
+<section id="dnaRna" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 DNA/RNA Concentration
+        </h2>
+
+        <div class="card">
+
+            <label for="a260">
+                A260 Absorbance
+            </label>
+
+            <input
+                type="number"
+                id="a260">
+
+
+            <label for="nucleicAcidFactor">
+                Conversion Factor
+            </label>
+
+            <input
+                type="number"
+                id="nucleicAcidFactor"
+                value="50">
+
+
+            <button
+                class="btn"
+                onclick="calculateDNAConcentration()">
+                Calculate
+            </button>
+
+
+            <div
+                id="dnaRnaResult"
+                class="result">
+            </div>
+
+            <div class="formula">
+                Concentration = A260 × conversion factor
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     DNA MELTING TEMPERATURE
+===================================================== -->
+
+<section id="melting" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 DNA Melting Temperature
+        </h2>
+
+        <div class="card">
+
+            <label for="tmSequence">
+                DNA Sequence
+            </label>
+
+            <textarea
+                id="tmSequence"
+                rows="4"
+                placeholder="Example: ATGCGCTA">
+            </textarea>
+
+
+            <button
+                class="btn"
+                onclick="calculateMeltingTemperature()">
+                Calculate Tm
+            </button>
+
+
+            <div
+                id="meltingResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     A260 / A280
+===================================================== -->
+
+<section id="purity" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🔬 A260/A280 Purity Ratio
+        </h2>
+
+        <div class="card">
+
+            <label for="a260Purity">
+                A260
+            </label>
+
+            <input
+                type="number"
+                id="a260Purity">
+
+
+            <label for="a280Purity">
+                A280
+            </label>
+
+            <input
+                type="number"
+                id="a280Purity">
+
+
+            <button
+                class="btn"
+                onclick="calculatePurity()">
+                Calculate Ratio
+            </button>
+
+
+            <div
+                id="purityResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     UNIT CONVERTER
+===================================================== -->
+
+<section id="unit" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🔄 Unit Converter
+        </h2>
+
+        <div class="card">
+
+            <label for="unitValue">
+                Value
+            </label>
+
+            <input
+                type="number"
+                id="unitValue">
+
+
+            <label for="unitType">
+                Conversion
+            </label>
+
+            <select id="unitType">
+
+                <option value="mlL">
+                    mL → L
+                </option>
+
+                <option value="lMl">
+                    L → mL
+                </option>
+
+                <option value="mgG">
+                    mg → g
+                </option>
+
+                <option value="gMg">
+                    g → mg
+                </option>
+
+                <option value="ugMg">
+                    µg → mg
+                </option>
+
+                <option value="mgUg">
+                    mg → µg
+                </option>
+
+            </select>
+
+
+            <button
+                class="btn"
+                onclick="convertUnit()">
+                Convert
+            </button>
+
+
+            <div
+                id="unitResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     PERCENTAGE
+===================================================== -->
+
+<section id="percentage" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧪 Percentage Concentration
+        </h2>
+
+        <div class="card">
+
+            <label for="soluteAmount">
+                Amount of solute
+            </label>
+
+            <input
+                type="number"
+                id="soluteAmount">
+
+
+            <label for="solutionAmount">
+                Total solution amount
+            </label>
+
+            <input
+                type="number"
+                id="solutionAmount">
+
+
+            <button
+                class="btn"
+                onclick="calculatePercentage()">
+                Calculate %
+            </button>
+
+
+            <div
+                id="percentageResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     SERIAL DILUTION
+===================================================== -->
+
+<section id="serial" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🔬 Serial Dilution
+        </h2>
+
+        <div class="card">
+
+            <label for="serialInitial">
+                Initial concentration
+            </label>
+
+            <input
+                type="number"
+                id="serialInitial">
+
+
+            <label for="serialFactor">
+                Dilution factor per step
+            </label>
+
+            <input
+                type="number"
+                id="serialFactor">
+
+
+            <label for="serialSteps">
+                Number of steps
+            </label>
+
+            <input
+                type="number"
+                id="serialSteps">
+
+
+            <button
+                class="btn"
+                onclick="calculateSerialDilution()">
+                Calculate
+            </button>
+
+
+            <div
+                id="serialResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     RCF
+===================================================== -->
+
+<section id="rcf" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🌀 RCF Centrifugation
+        </h2>
+
+        <div class="card">
+
+            <label for="rpm">
+                RPM
+            </label>
+
+            <input
+                type="number"
+                id="rpm">
+
+
+            <label for="radius">
+                Rotor radius (cm)
+            </label>
+
+            <input
+                type="number"
+                id="radius">
+
+
+            <button
+                class="btn"
+                onclick="calculateRCF()">
+                Calculate RCF
+            </button>
+
+
+            <div
+                id="rcfResult"
+                class="result">
+            </div>
+
+
+            <div class="formula">
+                RCF = 1.118 × 10⁻⁵ × r × RPM²
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     PROTEIN MOLECULAR WEIGHT
+===================================================== -->
+
+<section id="proteinWeight" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 Protein Molecular Weight
+        </h2>
+
+        <div class="card">
+
+            <label for="proteinSequence">
+                Amino Acid Sequence
+            </label>
+
+            <textarea
+                id="proteinSequence"
+                rows="5"
+                placeholder="Example: MKTLLV">
+            </textarea>
+
+
+            <button
+                class="btn"
+                onclick="calculateProteinWeight()">
+                Calculate
+            </button>
+
+
+            <div
+                id="proteinWeightResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     AMINO ACID
+===================================================== -->
+
+<section id="amino" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🧬 Amino Acid Calculator
+        </h2>
+
+        <div class="card">
+
+            <label for="aminoSequence">
+                Amino Acid Sequence
+            </label>
+
+            <textarea
+                id="aminoSequence"
+                rows="5"
+                placeholder="Example: MKTLLV">
+            </textarea>
+
+
+            <button
+                class="btn"
+                onclick="calculateAminoAcid()">
+                Analyze Sequence
+            </button>
+
+
+            <div
+                id="aminoResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     ABSORBANCE
+===================================================== -->
+
+<section id="absorbance" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🔬 Absorbance → Concentration
+        </h2>
+
+        <div class="card">
+
+            <label for="absorbanceValue">
+                Absorbance
+            </label>
+
+            <input
+                type="number"
+                id="absorbanceValue">
+
+
+            <label for="absEpsilon">
+                Molar absorptivity
+            </label>
+
+            <input
+                type="number"
+                id="absEpsilon">
+
+
+            <label for="absPath">
+                Path length
+            </label>
+
+            <input
+                type="number"
+                id="absPath"
+                value="1">
+
+
+            <button
+                class="btn"
+                onclick="calculateAbsorbanceConcentration()">
+                Calculate
+            </button>
+
+
+            <div
+                id="absorbanceResult"
+                class="result">
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     FORMULAS
+===================================================== -->
+
+<section id="formulas" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            📚 Biochemistry Formulas
+        </h2>
+
+
+        <div class="formula-list">
+
+            <div class="formula-item">
+                <h3>Molarity</h3>
+                <p>M = moles / volume (L)</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Dilution</h3>
+                <p>C₁V₁ = C₂V₂</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>pH</h3>
+                <p>pH = −log₁₀[H⁺]</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>pOH</h3>
+                <p>pOH = −log₁₀[OH⁻]</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Henderson–Hasselbalch</h3>
+                <p>pH = pKa + log([A⁻]/[HA])</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Beer–Lambert Law</h3>
+                <p>A = εcl</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Michaelis–Menten</h3>
+                <p>v = Vmax[S] / (Km + [S])</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>RCF</h3>
+                <p>RCF = 1.118 × 10⁻⁵ × r × RPM²</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     FORMULA LIBRARY
+===================================================== -->
+
+<section id="library" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            📖 Formula Library
+        </h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="formulaSearch"
+                placeholder="Search formulas..."
+                oninput="searchFormulas()">
+
+        </div>
+
+
+        <div
+            id="formulaLibrary"
+            class="formula-list">
+
+            <div class="formula-item">
+                <h3>Molarity</h3>
+                <p>M = n/V</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Molality</h3>
+                <p>m = n/kg solvent</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Normality</h3>
+                <p>N = equivalents/L</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Beer–Lambert</h3>
+                <p>A = εcl</p>
+            </div>
+
+            <div class="formula-item">
+                <h3>Michaelis–Menten</h3>
+                <p>v = Vmax[S]/(Km+[S])</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     SEARCH
+===================================================== -->
+
+<section id="search" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            🔎 Biochemistry Search
+        </h2>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="bioSearch"
+                placeholder="Search a biochemistry topic..."
+                oninput="searchBiochemistry()">
+
+        </div>
+
+
+        <div
+            id="searchResults"
+            class="search-results">
+
+            <div class="info-card">
+
+                <h2>
+                    Search BioChem Lab Hub
+                </h2>
+
+                <p>
+                    Search for topics such as enzymes,
+                    carbohydrates, proteins, lipids, DNA,
+                    metabolism and more.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     TOPICS
+===================================================== -->
+
+<section id="topics" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            📚 Biochemistry Topics
+        </h2>
+
+
+        <div class="topic-grid">
+
+            <div class="topic-card"
+                 onclick="showTopic('carbohydrate')">
+                <h3>🍞 Carbohydrate Biochemistry</h3>
+                <p>Structure, digestion and metabolism of carbohydrates.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('proteinTopic')">
+                <h3>🥩 Protein Biochemistry</h3>
+                <p>Amino acids, protein structure and function.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('lipid')">
+                <h3>🧈 Lipid Biochemistry</h3>
+                <p>Fatty acids, lipids and lipid metabolism.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('nucleic')">
+                <h3>🧬 Nucleic Acids</h3>
+                <p>DNA, RNA and nucleotide metabolism.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('bioenergetics')">
+                <h3>⚡ Bioenergetics</h3>
+                <p>Energy production and biological oxidation.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('enzymology')">
+                <h3>🧪 Enzymology</h3>
+                <p>Enzyme kinetics, inhibition and regulation.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('metabolism')">
+                <h3>🔥 Metabolism</h3>
+                <p>Major metabolic pathways and regulation.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('clinical')">
+                <h3>🩸 Clinical Biochemistry</h3>
+                <p>Biochemical markers and laboratory diagnosis.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('molecular')">
+                <h3>🧬 Molecular Biology</h3>
+                <p>DNA replication, transcription and translation.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('immunochemistry')">
+                <h3>🛡️ Immunochemistry</h3>
+                <p>Antigens, antibodies and immune reactions.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('hormones')">
+                <h3>🧪 Hormones & Signaling</h3>
+                <p>Hormones, receptors and cellular signaling.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('vitamins')">
+                <h3>💊 Vitamins & Minerals</h3>
+                <p>Functions, sources and biochemical roles.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('membrane')">
+                <h3>🧫 Membrane Biochemistry</h3>
+                <p>Membrane structure, transport and signaling.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('genetics')">
+                <h3>🧬 Genetics</h3>
+                <p>Genes, inheritance and genetic variation.</p>
+            </div>
+
+
+            <div class="topic-card"
+                 onclick="showTopic('biotechnology')">
+                <h3>🔬 Biotechnology</h3>
+                <p>Applications of biology and molecular technology.</p>
+            </div>
+
+        </div>
+
+
+        <!-- TOPIC CONTENT -->
+
+        <div id="topicContent"
+             class="topic-content">
+
+            <h2 id="topicTitle">
+                Select a topic
+            </h2>
+
+            <div id="topicText">
+                Choose a topic above to begin learning.
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+<!-- =====================================================
+     QUIZ
+===================================================== -->
+
+<section id="quiz" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            📝 Biochemistry Quiz
+        </h2>
+
+
+        <div class="card">
+
+            <div id="quizContainer">
+
+                <h3 id="quizQuestion">
+                    Loading question...
+                </h3>
+
+                <div id="quizOptions">
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="nextQuestion()">
+                    Next Question
+                </button>
+
+                <div
+                    id="quizScore"
+                    class="quiz-score">
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about" class="section">
+
+    <main>
+
+        <h2 class="section-title">
+            👨‍🔬 About BioChem Lab Hub
+        </h2>
+
+
+        <!-- ABOUT THE PLATFORM -->
+
+        <div class="info-card">
+
+            <h2>
+                About the Platform
+            </h2>
+
+            <p>
+                BioChem Lab Hub is a digital learning and laboratory
+                calculation platform designed to make Biochemistry
+                calculations, formulas, topics, and study resources
+                easier to access and understand.
+            </p>
+
+
+            <h3>
+                🎯 Our Mission
+            </h3>
+
+            <p>
+                To provide students and learners with simple,
+                useful, accurate, and accessible tools for studying
+                Biochemistry.
+            </p>
+
+
+            <h3>
+                🧪 What You Can Find Here
+            </h3>
+
+            <ul>
+
+                <li>Biochemistry calculators</li>
+
+                <li>Laboratory tools</li>
+
+                <li>DNA and RNA tools</li>
+
+                <li>Biochemistry formulas</li>
+
+                <li>Biochemistry topics</li>
+
+                <li>Study resources</li>
+
+                <li>Practice quizzes</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- ABOUT THE DEVELOPER -->
+
+        <div class="info-card">
+
+            <h2>
+                👨‍🔬 About the Developer
+            </h2>
+
+            <h3>
+                Abdullahi Sani Garba
+            </h3>
+
+            <p>
+                I am a Biochemistry student with a passion for
+                science, technology, programming, and digital
+                creation.
+            </p>
+
+            <p>
+                I created <strong>BioChem Lab Hub</strong> to make
+                Biochemistry calculations, formulas, topics, and
+                learning resources easier for students to access
+                and understand.
+            </p>
+
+
+            <h3>
+                🚀 My Vision
+            </h3>
+
+            <p>
+                My vision is to combine
+                <strong>Biochemistry, technology, and innovation</strong>
+                to create useful digital tools that support students,
+                laboratory learning, scientific education, and future
+                research.
+            </p>
+
+
+            <h3>
+                💡 Project Goal
+            </h3>
+
+            <p>
+                The goal of BioChem Lab Hub is to help Biochemistry
+                students calculate, learn, practice, and explore
+                important concepts more easily using technology.
+            </p>
+
+
+            <h3>
+                🔬 Future Plans
+            </h3>
+
+            <p>
+                Future plans include adding more scientific
+                calculators, advanced study tools, laboratory
+                resources, educational content, and other useful
+                features for students and researchers.
+            </p>
+
+        </div>
+
+    </main>
+
+</section>
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact" class="section">
+
+    <main>
+
+        <h2 class="section-title">📩 Contact</h2>
+
+        <div class="card">
+
+            <h3>Get in Touch</h3>
+
+            <p>
+                Have a question, suggestion, or feedback about
+                <strong>BioChem Lab Hub</strong>?
+                Feel free to contact me.
+            </p>
+
+            <p>
+                📧 <strong>Email:</strong>
+                <a href="mailto:Abdullahisanigarba26@gmail.com">
+                    Abdullahisanigarba26@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 <strong>Phone / WhatsApp:</strong>
+                <a href="tel:08084642455">
+                    08084642455
+                </a>
+            </p>
+
+            <p>
+                💬 You can also reach me through WhatsApp using
+                the phone number above.
+            </p>
+
+        </div>
+
+    </main>
+
+</section> 
+
+<!-- =====================================================
+     PRIVACY POLICY
+===================================================== -->
+
+<section id="privacy" class="section">
+
+    <main>
+
+        <h2 class="section-title">🔒 Privacy Policy</h2>
+
+        <div class="card">
+
+            <h3>Privacy Policy – BioChem Lab Hub</h3>
+
+            <p>
+                Your privacy is important to us. This Privacy Policy
+                explains how BioChem Lab Hub handles information when
+                you use this website.
+            </p>
+
+            <h3>📋 Information We Collect</h3>
+
+            <p>
+                BioChem Lab Hub is primarily an educational website.
+                Most calculators and study tools can be used without
+                creating an account or providing personal information.
+            </p>
+
+            <p>
+                If you contact the developer voluntarily, the
+                information you provide may be used to respond to
+                your question, suggestion, correction, or feedback.
+            </p>
+
+            <h3>🧮 Calculator Information</h3>
+
+            <p>
+                The calculations performed by BioChem Lab Hub are
+                generally processed within your browser. Information
+                entered into the calculators is not intentionally
+                collected or stored as a personal database.
+            </p>
+
+            <h3>🍪 Cookies</h3>
+
+            <p>
+                BioChem Lab Hub may use cookies or similar technologies
+                in the future for analytics, advertising, or other
+                website functionality.
+            </p>
+
+            <h3>🌐 Third-Party Services</h3>
+
+            <p>
+                The website may use third-party services such as
+                analytics, advertising, hosting, or other services.
+                These services may collect information according to
+                their own privacy policies.
+            </p>
+
+            <h3>📢 Advertising</h3>
+
+            <p>
+                BioChem Lab Hub may display advertisements in the future
+                to support the development and maintenance of the website.
+                Advertising providers may use cookies or similar
+                technologies.
+            </p>
+
+            <h3>🔐 Data Security</h3>
+
+            <p>
+                Reasonable measures are taken to protect information
+                provided through the website. However, no internet
+                transmission or electronic storage system can be
+                guaranteed to be completely secure.
+            </p>
+
+            <h3>🔗 External Links</h3>
+
+            <p>
+                BioChem Lab Hub may contain links to external websites.
+                We are not responsible for the privacy practices or
+                content of external websites.
+            </p>
+
+            <h3>🔄 Changes to This Privacy Policy</h3>
+
+            <p>
+                This Privacy Policy may be updated from time to time
+                as BioChem Lab Hub develops and new features are added.
+                Any updated version will be published on this page.
+            </p>
+
+            <h3>⚠️ Educational Disclaimer</h3>
+
+            <p>
+                BioChem Lab Hub is an educational project designed to
+                help students understand Biochemistry calculations,
+                formulas, and concepts. Results should be independently
+                verified before being used in professional laboratory,
+                clinical, research, or academic work.
+            </p>
+
+            <h3>📩 Contact</h3>
+
+            <p>
+                If you have questions about this Privacy Policy,
+                you can contact the developer.
+            </p>
+
+            <p>
+                📧 <strong>Email:</strong>
+                <a href="mailto:Abdullahisanigarba26@gmail.com">
+                    Abdullahisanigarba26@gmail.com
+                </a>
+            </p>
+
+            <p>
+                📱 <strong>Phone / WhatsApp:</strong>
+                <a href="tel:08084642455">
+                    08084642455
+                </a>
+            </p>
+
+            <p>
+                <strong>Last Updated:</strong> 2026
+            </p>
+
+        </div>
+
+    </main>
+
+</section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+        🧪 <strong>BioChem Lab Hub</strong>
+    </p>
+
+    <p>
+        Biochemistry Calculator & Study Tools
+    </p>
+
+    <p>
+        Calculate • Learn • Explore Biochemistry
+    </p>
+
+
+    <div class="footer-links">
+
+        <button onclick="showSection('home')">
+            Home
+        </button>
+
+        <button onclick="showSection('about')">
+            About
+        </button>
+
+        <button onclick="showSection('contact')">
+            Contact
+        </button>
+
+        <button onclick="showSection('privacy')">
+            Privacy
+        </button>
+
+    </div>
+
+
+    <p>
+        © <span id="currentYear"></span>
+        BioChem Lab Hub. All rights reserved.
+    </p>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
